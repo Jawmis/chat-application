@@ -30,7 +30,7 @@ wss.on("connection", (socket) => {
         }
         */ 
         if (parsedMessage.type === "join") {
-            console.log("user joined room" + parsedMessage.payload.roomId);
+            console.log("user joined room " + parsedMessage.payload.roomId);
             allSockets.push({
                 socket,
                 room: parsedMessage.payload.roomId
